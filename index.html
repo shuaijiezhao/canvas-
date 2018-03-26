@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas画板</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<!-- 画布 -->
+	<canvas id="canvas" width="300" height="300"></canvas>
+	
+	<!-- 画笔和橡皮檫 -->
+	<div id="actions" class="actions">
+		<!-- <div id="pen"></div>
+		<div id="eraser"></div>
+		<div id="clear"></div>
+		<div id="download"></div> -->
+		<svg id="pen" class="active icon">
+			<use xlink:href="#icon-pen"></use>
+		</svg>
+		<svg id="eraser" class="icon">
+			<use xlink:href="#icon-erase"></use>
+		</svg>
+		<svg id="clear" class="icon">
+			<use xlink:href="#icon-clear"></use>
+		</svg>
+		<svg id="download" class="icon">
+			<use xlink:href="#icon-save"></use>
+		</svg>
+	</div>
+
+	<!-- 颜色 -->
+	<ol id="colors">
+		<li id="red" class="red active"></li>
+		<li id="green" class="green"></li>
+		<li id="blue" class="blue"></li>
+	</ol>
+
+	<!-- 粗细 -->
+	<ol id="sizes">
+		<li id="thin" class="thin"></li>
+		<li id="thick" class="thick"></li>
+	</ol>
+
+	<script src="./js/main.js"></script>
+	<script src="./js/code.min.js"></script>
+</body>
+</html>
